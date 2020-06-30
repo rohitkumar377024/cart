@@ -1,18 +1,18 @@
 import React, { useContext } from 'react';
 import { ProductContext } from './ProductContext';
+import Product from './Product';
 
-const Product = () => {
+const ProductsList = () => {
   const [products, setProducts] = useContext(ProductContext);
 
   return (
     <div>
-      <h1>Products.</h1>
-
+      <h1>Products</h1>
       {products.map(product => (
-        <li>{product.name}</li>
+        <Product key={product.id} name={product.name} price={product.price} />
       ))}
     </div>
   );
 };
 
-export default Product;
+export default ProductsList;

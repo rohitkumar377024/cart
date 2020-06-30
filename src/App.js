@@ -1,16 +1,19 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
-import ProductsList from './ProductsList';
-import Cart from './Cart';
-import { ProductContext, ProductProvider } from './ProductContext';
+import { ProductProvider } from './components/products/ProductContext';
+import { CartProvider } from './components/cart/CartContext';
+import ProductsList from './components/products/ProductsList';
+import CartList from './components/cart/CartList';
 
 function App() {
   return (
     <ProductProvider>
-      <div>
-        <ProductsList />
-        {/* <Cart /> */}
-      </div>
+      <CartProvider>
+        <div>
+          <ProductsList />
+          <CartList />
+        </div>
+      </CartProvider>
     </ProductProvider>
   );
 }
