@@ -10,6 +10,7 @@ const CartList = () => {
       {cartItems.map(cartItem => (
         <CartItem
           key={cartItem.id}
+          id={cartItem.id}
           name={cartItem.name}
           price={cartItem.price}
           totalCost={cartItem.totalCost}
