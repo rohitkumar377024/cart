@@ -1,38 +1,89 @@
-.App {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Products */
+.products {
+  padding: 40px 25px 0px;
+  margin: auto;
+  min-width: 360px;
+  max-width: 560px;
+  /* background-color: red; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.products-heading {
+  /* background-color: yellow; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.product {
+  padding: 10px;
+  margin: 10px 15px;
+  /* background-color: cyan; */
+}
+
+.product-name {
+  margin-bottom: 8px;
+  /* background-color: aqua; */
+}
+
+.product-price {
+  /* background-color: rebeccapurple; */
+}
+
+.add-to-cart-btn {
+  font-weight: bold;
+  font-size: 1em;
+  background-color: #ffff0000;
+  border: 1.5px solid black;
+  border-radius: 4px;
+  padding: 10px 15px;
+  margin: 10px auto;
+  width: 50%;
+}
+
+.add-to-cart-btn:hover {
   color: white;
+  background-color: black;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.add-to-cart-btn:active {
+  color: white;
+  background-color: #353535;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Cart */
+.cart {
+  padding: 15px 25px 0px;
+  margin: auto;
+  max-width: 560px;
+  /* background-color: rebeccapurple; */
+}
+
+.cart-heading {
+  /* background-color: red; */
+}
+
+.cart-item {
+  /* color: aquamarine; */
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  border-bottom: 1px solid grey;
+}
+
+.cart-item-title {
+  /* color: blue; */
+  margin-right: 20px;
+}
+
+.cart-item-cost {
+  /* color: cornflowerblue; */
 }

@@ -6,8 +6,8 @@ const ProductsList = () => {
   const [products, setProducts] = useContext(ProductContext);
 
   return (
-    <div>
-      <h1>Products</h1>
+    <div className="products">
+      <h1 className="products-heading">Products</h1>
       {products.map(product => (
         <Product
           key={product.id}

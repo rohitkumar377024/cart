@@ -5,8 +5,8 @@ import CartItem from './CartItem';
 const CartList = () => {
   const [cartItems, setCartItems] = useContext(CartContext);
   return (
-    <div>
-      <h1>Cart</h1>
+    <div className="cart">
+      <h1 className="cart-heading">Cart</h1>
       {cartItems.map(cartItem => (
         <CartItem
           key={cartItem.id}

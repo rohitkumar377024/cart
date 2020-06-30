@@ -37,10 +37,12 @@ const Product = ({ name, price, id }) => {
   };
 
   return (
-    <div>
-      <h3>{name}</h3>
-      <p>₹{price}</p>
-      <button onClick={addToCart}>Add To Cart</button>
+    <div className="product">
+      <h3 className="product-name">{name}</h3>
+      <p className="product-price">₹{price}</p>
+      <button className="add-to-cart-btn" onClick={addToCart}>
+        Add To Cart
+      </button>
     </div>
   );
 };
